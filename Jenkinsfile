@@ -20,7 +20,7 @@ pipeline {
             stage('Clone Repo') {
                   steps {
 	     echo 'Cloning the Repository'
-	     git branch:'main',url:'https://github.com/chntraining/cdeacrep.git',credentialsId:'git.cred'
+	     git branch:'main',url:'https://github.com/chntraining/cdeacrep.git',credentialsId:'git.mygithubcred'
 	 }
             }
              stage('Build') {
